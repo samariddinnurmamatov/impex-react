@@ -1,10 +1,11 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Container from "../../../shared/Container";
 import Logo from "../../../../assets/img/impex-logo.svg";
 import SearchIcon from "../../../../assets/img/search.svg";
 import EyeIcon from "../../../../assets/img/eye.svg";
 import VoiceIcon from "../../../../assets/img/voice.svg";
 import LineIcon from "../../../../assets/img/Line 1.svg";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Mainheader = () => {
   useEffect(() => {
@@ -41,6 +42,21 @@ const Mainheader = () => {
       document.removeEventListener('click', hideDropdown);
     };
   }, []);
+
+  const [nav, setNav] = useState(false);
+
+  // const handleNav = () => {
+  //   setNav(!nav);
+  // };
+
+  // const navItems = [
+  //   { id: 1, text: 'ГЛАВНАЯ' },
+  //   { id: 2, text: 'О НАС' },
+  //   { id: 3, text: 'ВСЕ УСЛУГИ' },
+  //   { id: 4, text: 'ОТКРЫТЫЕ ДАННЫЕ' },
+  //   { id: 5, text: 'НОВОСТИ' },
+  //   { id: 6, text: 'КОНТАКТЫ' },
+  // ];
 
   return (
     <Fragment>
@@ -101,6 +117,7 @@ const Mainheader = () => {
         </Container>
       </header>
     </Fragment>
+
   );
 };
 
