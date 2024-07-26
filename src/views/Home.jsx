@@ -17,6 +17,7 @@ import ImpexBarcode from "../assets/img/barcode.svg";
 import ImpexGoogle from "../assets/img/google-play.svg";
 import ImpexAppstore from "../assets/img/appstore.svg";
 import ImpexDownload from "../assets/img/impex-download.svg";
+import plain from "../../src/assets/img/plainMain.svg"
 
 const Home = () => {
   return (
@@ -33,8 +34,8 @@ const Home = () => {
               <div className="flex items-center justify-between py-10 px-2 gap-5">
                 <div className="flex flex-col gap-y-5" style={{ width: "60%" }}>
                   <h2 className="font-extrabold text-5xl">
-                    Полис
-                    <br /> ОСГО ВТС (ОСАГО)
+                  Страхование
+                  в путешествии
                   </h2>
                   <p>Оформить обязательное страхование автомобиля онлайн</p>
                   <div className="mt-4 flex gap-x-5">
@@ -55,7 +56,8 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="w-full">
-                  <img className="w-full" src={Hero_Img_Right} alt="" />
+                  <img className="w-full" src={plain} alt="" />
+                  
                 </div>
               </div>
               <div

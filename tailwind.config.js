@@ -14,12 +14,12 @@ export default {
         'dark-blue':"#203046"
       },
       backgroundImage: {
-        'background-box': "url('/src/assets/img/insurance_box_background.svg')",
+        'background-box': "url('/src/assets/img/bg-main.svg')",
       },
       boxShadow: {
         'custom-light': '0px 2px 8px rgba(99, 99, 99, 0.2)',
-      },
     },
   },
   plugins: [],
+}
 }
