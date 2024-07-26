@@ -6,6 +6,10 @@ import Osago from './views/osago/Osago'
 import OsagoDanni from './views/osago/Osago-Danni'
 import News from './views/news/News'
 import NewsOne from './views/news/NewsOne'
+import { About } from './views/aboutUs/About'
+import { Vacancy1 } from './views/vacancy/Vacancy1'
+import { Vacancy2 } from './views/vacancy/Vacancy2'
+import { Vacancy3 } from './views/vacancy/Vacancy3'
 
 function App() {
 
@@ -19,11 +23,14 @@ function App() {
           <Route path='osago-danni' element={<OsagoDanni />} />
           <Route path='news' element={<News />} />
           <Route path='newsone' element={<NewsOne />} />
+          <Route path="about-us" element={<About />} />
+          <Route path="vacancy-1" element={<Vacancy1 />} />
+          <Route path="vacancy-2" element={<Vacancy2 />} />
+          <Route path="vacancy-3" element={<Vacancy3 />} />
           {/* <Route path="pricing" element={<Pricing />} /> */}
           {/* <Route path="confirmation" element={<Confirmation />} />
           <Route path="typography" element={<Typography />} />
           <Route path="contact-us" element={<ContactUs />} />
-          <Route path="about-us" element={<AboutUs />} />
           <Route path="faq" element={<Faq />} />
           <Route path="shop" element={<Shop />} />
           <Route path="cart" element={<Savat />} />
