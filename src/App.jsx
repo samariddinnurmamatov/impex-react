@@ -10,6 +10,7 @@ import { About } from './views/aboutUs/About'
 import { Vacancy1 } from './views/vacancy/Vacancy1'
 import { Vacancy2 } from './views/vacancy/Vacancy2'
 import { Vacancy3 } from './views/vacancy/Vacancy3'
+import EditHome from './views/EditHome'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<BaseLayout />}>
           <Route index element={<Home />} />
+          <Route path='edit-home' element={<EditHome />} />
           <Route path='osago' element={<Osago />} />
           <Route path='osago-danni' element={<OsagoDanni />} />
           <Route path='news' element={<News />} />

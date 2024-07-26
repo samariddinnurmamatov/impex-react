@@ -1,0 +1,134 @@
+/* Mobile Devices (Portrait) */
+@media (max-width: 1290px) {
+    .main {
+      flex-wrap: wrap;
+    }
+}
+@media (max-width: 480px) {
+    .hero-section {
+      background-size: cover; /* Adjust background image for smaller screens */
+      padding: 20px; /* Add padding to the hero section */
+    }
+    
+    .hero-section .flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .offers__grid {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .offers__grid .skew {
+      width: 100%;
+      margin-bottom: 20px; /* Add space between offers */
+    }
+  
+    .about-us .flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .about-us .flex .w-full {
+      width: 100%;
+    }
+  
+    .news__grid {
+      grid-template-columns: 1fr; /* Stack news items vertically on small screens */
+    }
+  
+    .news__grid .col-span-3 {
+      grid-template-columns: 1fr; /* Ensure full-width for last row items */
+    }
+  
+    .contact-us {
+      flex-direction: column;
+    }
+  
+    .contact-us .left,
+    .contact-us .right {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .contact-us .right {
+      margin-top: 20px;
+    }
+  
+    .subscribe {
+      text-align: center;
+    }
+  
+    .subscribe .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .achievements .grid {
+      grid-template-columns: 1fr; /* Stack achievements vertically on small screens */
+    }
+  
+    .achievements .grid .col-span-2,
+    .achievements .grid .row-span-3 {
+      width: 100%;
+      margin-bottom: 20px; /* Add space between achievements */
+    }
+  }
+  
+  /* Tablets (Portrait and Landscape) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .hero-section {
+      padding: 40px; /* Adjust padding for tablet screens */
+    }
+  
+    .hero-section .flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .offers__grid {
+      flex-direction: column; /* Stack items vertically on tablets */
+    }
+  
+    .offers__grid .skew {
+      width: 100%;
+      margin-bottom: 20px; /* Add space between offers */
+    }
+  
+    .about-us .flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .news__grid {
+      grid-template-columns: 1fr 1fr; /* Two columns layout for tablets */
+    }
+  
+    .contact-us {
+      flex-direction: column;
+    }
+  
+    .contact-us .left,
+    .contact-us .right {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .contact-us .right {
+      margin-top: 20px;
+    }
+  
+    .subscribe .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .achievements .grid {
+      grid-template-columns: 1fr 1fr; /* Two columns layout for tablets */
+    }
+  }
+  
