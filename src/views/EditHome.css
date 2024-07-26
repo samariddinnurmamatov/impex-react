@@ -1,0 +1,49 @@
+.main-bg {
+    background-image: url("../assets/img/edit-home-bg.svg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-main-2 {
+    background-image: url(../assets/img/bg-main-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 44px;
+}
+.bg_1, .bg_2, .bg_3, .bg_4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 2;
+}
+.bg_1 {
+    background-image: url(../assets/img/bg-edit3.png);
+}
+.bg_2 {
+    background-image: url(../assets/img/bg-edit4.svg);
+}
+.bg_2::after, .bg_4::after, .bg_3::after {
+    content: '';
+    display: block; /* Make sure it generates a block element */
+    background-image: url(../assets/img/linear.svg);
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Adjusts the position of the background image */
+    width: 100%; /* Or specific width */
+    height: 100%; /* Or specific height */
+    position: absolute; /* Makes sure it overlays properly */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.bg_3 {
+    background-image: url(../assets/img/bg-edit2.png)
+}
+.bg_4 {
+    background-image: url(../assets/img/bg-edit1.png);
+}
