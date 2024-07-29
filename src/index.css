@@ -255,3 +255,46 @@ transition: all 0.3s ease;
   transform: skewX(0deg);
   opacity: 1;
 }
+/* Sidebarni 900px dan kichik ekranlar uchun to'g'rilash */
+/* 1025px gacha bo'lgan ekranlar uchun */
+@media (max-width: 1025px) {
+    .navbar nav {
+        display: none;
+    }
+    .header__phone {
+        display: none;
+    }
+    .navbar .flex.items-center {
+        justify-content: space-between;
+    }
+    .navbar .flex.items-center .nav-link {
+        display: block;
+    }
+    .fixed ul {
+        padding-top: 20px;
+    }
+    .fixed ul .header__phone {
+        display: block;
+    }
+}
+
+/* 720px gacha bo'lgan ekranlar uchun */
+@media (max-width: 720px) {
+    .navbar nav,
+    .header__phone {
+        display: none;
+    }
+    .navbar .flex.items-center {
+        justify-content: space-between;
+    }
+    .navbar .flex.items-center .nav-link {
+        display: none;
+    }
+    .fixed ul {
+        padding-top: 20px;
+    }
+    .fixed ul .header__phone {
+        display: block;
+    }
+}
+
