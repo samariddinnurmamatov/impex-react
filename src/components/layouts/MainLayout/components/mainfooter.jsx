@@ -43,7 +43,7 @@ const Osago = () => {
                   <p>2024 - АО «IMPEX INSURANCE». Все права защищены</p>
                 </div>
               </div>
-              <div>
+              <div className="bg-ft">
                 <img src={ImpexFooterBc} alt="" />
               </div>
               <div>

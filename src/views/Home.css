@@ -4,16 +4,139 @@
       flex-wrap: wrap;
     }
 }
+@media (min-width: 1130px){
+  .non{
+    display: block;
+  }
+  .bloc{
+    display: none;
+  }
+}
+@media (max-width: 1130px){
+  .non{
+    display: none;
+  }
+  .bloc{
+    display: block;
+  }
+  .bloc .fal{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    width: 100% !important;
+  }
+  .bloc .fal .wdimg{
+    width: 100%;
+  }
+  .bloc .fal .wdimg img{
+    height: 500px;
+  }
+  .bloc .pno{
+    padding: 0px !important;
+  }
+  .download-app {
+
+  }
+}
+@media (max-width: 1050px) {
+  .download-app .download-app-all{
+    display: none;
+  }
+  .download-app .download-app-all2{
+    display: block;
+  }
+  /* .download-app .download-app-all2 .left{
+    display: flex;
+    flex-direction: column-reverse;
+  } */
+}
+@media (min-width: 1050px) {
+  .download-app .download-app-all2{
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+  }
+  .contact .left .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 13px;
+    position: relative;
+    width: 100%;
+  }
+  .contact .left  .girl_contact {
+    display: none;
+    position: absolute;
+    right: -20px;
+    bottom: 5px;
+    width: 100%;
+  }
+  .contact .right{
+    width: 100%;
+  }
+}
+@media (max-width: 840px) {
+  .subs{
+    overflow: hidden;
+    position: relative;
+  }
+  .subs .txts{
+    padding: 30px 2px !important;
+  }
+  .subs .img{
+    position: absolute;
+    top: -130px;
+    right: -130px;
+  }
+
+}
+
 @media (max-width: 480px) {
-    .hero-section {
-      background-size: cover; /* Adjust background image for smaller screens */
-      padding: 20px; /* Add padding to the hero section */
+    .main-bg {
+      padding: 40px; /* Adjust padding for tablet screens */
     }
-    
+    .bloc .fal .wdimg img{
+      height: 350px;
+    }
+    .bloc .fal h2{
+      font-size: 20px;
+    }
+    .bloc .fal p{
+      margin-top: 0px !important;
+    }
+    .contact .right h2 {
+      font-size: 19px;
+    }
+    .contact .right p{
+      font-size: 14px;
+    }
+    .contact .right .contact-us__form .for_f {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact .right .contact-us__form button {
+      float: left !important;
+    }
+    .whys{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+      gap: 10px;
+    }
     .hero-section .flex {
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      /* align-items: center;
+      text-align: center; */
+    }
+    .hero-section .flex p {
+      font-size: 18px !important;
+      margin-top: 15px !important;
     }
   
     .offers__grid {
@@ -25,19 +148,10 @@
       margin-bottom: 20px; /* Add space between offers */
     }
   
-    .about-us .flex {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
     .about-us .flex .w-full {
       width: 100%;
     }
   
-    .news__grid {
-      grid-template-columns: 1fr; /* Stack news items vertically on small screens */
-    }
   
     .news__grid .col-span-3 {
       grid-template-columns: 1fr; /* Ensure full-width for last row items */
@@ -75,34 +189,36 @@
       width: 100%;
       margin-bottom: 20px; /* Add space between achievements */
     }
-  }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+    }
+}
   
   /* Tablets (Portrait and Landscape) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    .hero-section {
+  @media (min-width: 481px) and (max-width: 864px) {
+    .main-bg {
       padding: 40px; /* Adjust padding for tablet screens */
     }
   
-    .hero-section .flex {
+    /* .hero-section .flex {
       flex-direction: column;
       align-items: center;
       gap: 20px;
+    } */
+    .offers {
+      padding: 20px 28px;
     }
-  
     .offers__grid {
-      flex-direction: column; /* Stack items vertically on tablets */
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
     }
   
     .offers__grid .skew {
       width: 100%;
       margin-bottom: 20px; /* Add space between offers */
     }
-  
-    .about-us .flex {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
+
   
     .news__grid {
       grid-template-columns: 1fr 1fr; /* Two columns layout for tablets */
@@ -129,6 +245,100 @@
   
     .achievements .grid {
       grid-template-columns: 1fr 1fr; /* Two columns layout for tablets */
+    }
+  }
+  @media (max-width: 560px) {
+    .download-app-all2{
+     padding: 20px 20px !important;
+    }
+    .download-app-all2 .left .right img{
+      display: none;
+    }
+    .download-app-all2 h2{
+      font-size: 20px;
+    }
+    .download-app-all2 p{
+      font-size: 15px;
+    }
+    .download-app{
+      padding-top: 130px !important;
+    }
+  }
+  @media (max-width: 500px) {
+    .offers__grid {
+      display: none !important;
+    }
+    .hidden-slider{
+      display: block;
+    }
+    .offers__slider {
+      display: block;
+      /* gap: 20px; */
+    }
+    .grid-layout{
+      display: none;
+    }
+    .slick-track{
+      display: flex !important;
+      gap: 5px !important;
+    }
+
+    .contact .left  .girl_contact {
+      display: block;
+      position: absolute;
+      right: -65px;
+      bottom: -10px;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 501px) {
+    .offers__slider {
+      display: none;
+    }
+    .hidden-slider{
+      display: none !important;
+    }
+    .offers__grid {
+      display: grid;
+    }
+  }
+  
+  
+
+  @media (max-width: 764px) {
+    .offers__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .news__grid {
+      grid-template-columns: 1fr; /* Stack news items vertically on small screens */
+    }
+    .news__grid2{
+      grid-template-columns: 1fr; 
+    }
+    .subs .img{
+      display: none;
+      top: -130px;
+      right: -130px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .wa{
+      width: 100%;
+    }
+    .whys{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 590px) {
+    .offers__grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   

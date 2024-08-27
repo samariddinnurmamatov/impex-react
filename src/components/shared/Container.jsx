@@ -8,7 +8,7 @@ const Container = forwardRef((props, ref) => {
   return (
     <Component
       ref={ref}
-      className={classNames('container mx-auto', className)}
+      className={classNames('containera mx-auto', className)}
       {...rest}
     >
       {children}

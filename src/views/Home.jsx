@@ -1,16 +1,13 @@
 import { Fragment } from "react";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Container from "../components/shared/Container";
 import Hero_Bg from "../assets/img/hero-bg.svg";
 import Hero_Img_Right from "../assets/img/hero-img-right.svg";
-import Line3 from "../assets/img/Line 3.svg";
 import Impexcar1 from "../assets/img/impex-car1.svg";
 import Impexabout from "../assets/img/impex-about-img.png";
 import ImpexMaestro from "../assets/img/Maestro_1.svg";
 import ImpexContact from "../assets/img/contact-img.svg";
 import ImpexVector from "../assets/img/Vector.svg";
-import ImpexSubs1 from "../assets/img/subs-img1.svg";
-import ImpexSubs2 from "../assets/img/subs-img2.svg";
 import ImpexSert from "../assets/img/impex-sertifikat.svg";
 import ImpexArxiv from "../assets/img/impex-arxive-rate.svg";
 import ImpexArxivKub from "../assets/img/impex-arxive-kub.svg";

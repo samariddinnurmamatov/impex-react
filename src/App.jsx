@@ -11,6 +11,9 @@ import { Vacancy1 } from './views/vacancy/Vacancy1'
 import { Vacancy2 } from './views/vacancy/Vacancy2'
 import { Vacancy3 } from './views/vacancy/Vacancy3'
 import EditHome from './views/EditHome'
+import Contact from './views/contact/Contact'
+import Data  from './views/data/data'
+import Services from './views/services/Services'
 
 function App() {
 
@@ -29,6 +32,9 @@ function App() {
           <Route path="vacancy-1" element={<Vacancy1 />} />
           <Route path="vacancy-2" element={<Vacancy2 />} />
           <Route path="vacancy-3" element={<Vacancy3 />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="data" element={<Data />} />
+          <Route path="services" element={<Services />} />
           {/* <Route path="pricing" element={<Pricing />} /> */}
           {/* <Route path="confirmation" element={<Confirmation />} />
           <Route path="typography" element={<Typography />} />
